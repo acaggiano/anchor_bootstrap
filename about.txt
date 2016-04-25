@@ -1,0 +1,5 @@
+Theme name:    Anchor Bootstrap
+Description:   A theme built on bootstrap and a lot of googling.
+Author name:   Weo
+Author site:   http://anthonycaggiano.com
+License:       

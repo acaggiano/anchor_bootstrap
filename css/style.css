@@ -1,0 +1,11 @@
+footer {
+	margin-top: 20px;
+}
+.post-list {
+	list-style: none;
+}
+.featured-image {
+	overflow: hidden;
+	min-height: 380px;
+	background-position: center;
+}
