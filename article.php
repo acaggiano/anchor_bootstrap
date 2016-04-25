@@ -2,7 +2,7 @@
 		<section class="container" id="article-<?php echo article_id(); ?>">
 			<?php $featuredimage = article_custom_field('featured_image'); ?>
 			<?php if(!empty($featuredimage)): ?>
-			<div style="background-image: url(<?php echo "http://anthonycaggiano.com".$featuredimage ?>);" class="featured-image">
+			<div style="background-image: url(<?php echo $featuredimage ?>);" class="featured-image">
 			</div>
 			<?php endif; ?>
 			<h1><?php echo article_title(); ?></h1>
