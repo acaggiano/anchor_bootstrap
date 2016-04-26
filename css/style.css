@@ -1,11 +1,32 @@
+.page-header {
+	border-bottom: none;
+}
 footer {
 	margin-top: 20px;
 }
 .post-list {
 	list-style: none;
 }
+.support-list {
+	list-style: none;
+}
+.support-list li {
+	margin-bottom: 20px;
+}
+.side-list {
+	list-style: none;
+	font-size: .9em;
+}
 .featured-image {
 	overflow: hidden;
 	min-height: 380px;
 	background-position: center;
+}
+.support-image {
+	width: 128px;
+	height: auto;
+}
+.side-thumb {
+	width: 96px;
+	height: auto;
 }

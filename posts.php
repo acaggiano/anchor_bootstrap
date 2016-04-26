@@ -5,7 +5,9 @@
 	<?php if(has_posts()): ?>
 		<ul class="post-list">
 			<?php posts(); ?>
-			<li>
+			<?php $support_post = article_custom_field('support') ?> 
+			<?php if($support_post != 'yes'): ?>
+			<li class="featured-post">
 				<article class="col-md-10">
 					<h1>
 						<a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
@@ -21,7 +23,10 @@
 					</div>
 				</article>
 			</li>
+			<?php endif; ?>
 			<?php $i = 0; while(posts()): ?>
+			<?php $support_post = article_custom_field('support') ?>
+			<?php if($support_post != 'yes'): ?>
 			<li>
 				<article class="col-md-10">
 					<h2>
@@ -35,6 +40,7 @@
 					</div>
 				</article>
 			</li>
+			<?php endif; ?>
 			<?php endwhile; ?>
 		</ul>
 

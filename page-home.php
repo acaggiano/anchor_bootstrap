@@ -7,7 +7,9 @@
 			</article>
 			<div class="col-md-4">
 			<aside>
-				<b>News</b>
+				<div class="text-center">
+					<h3><a href="posts">News</a></h3>
+				</div>
 				<?php theme_include('sidebar'); ?>
 			</aside>
 			</div>

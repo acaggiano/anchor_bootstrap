@@ -2,8 +2,7 @@
 		<section class="container" id="article-<?php echo article_id(); ?>">
 			<?php $featuredimage = article_custom_field('featured_image'); ?>
 			<?php if(!empty($featuredimage)): ?>
-			<div style="background-image: url(<?php echo $featuredimage ?>);" class="featured-image">
-			</div>
+				<div style="background-image: url(<?php echo $featuredimage ?>);" class="featured-image"></div>
 			<?php endif; ?>
 			<h1><?php echo article_title(); ?></h1>
 			<article>
@@ -14,9 +13,8 @@
 				<!-- Unfortunately, CSS means everything's got to be inline. -->
 				<!-- <p>This article is my <?php /*echo numeral(article_number(article_id()), true); ?> oldest. It is <?php echo count_words(article_markdown()); ?> words long<?php if(comments_open()): ?>, and it’s got <?php echo total_comments() . pluralise(total_comments(), ' comment'); ?> for now.<?php endif; ?> <?php echo article_custom_field('attribution'); */?></p> -->
 				<div class="article-data">
-						<i class="fa fa-calendar" aria-hidden="true"></i> Posted <time datetime="<?php echo date(DATE_W3C, article_time()); ?>"> Posted <time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time> by  <i class="fa fa-user" aria-hidden="true"></i>
-<a href="#"><?php echo article_author('real_name'); ?></a>.
-					</div>
+					<i class="fa fa-calendar" aria-hidden="true"></i> Posted <time datetime="<?php echo date(DATE_W3C, article_time()); ?>"> <time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time> by <i class="fa fa-user" aria-hidden="true"></i> <a href="#"><?php echo article_author('real_name'); ?></a>.
+				</div>
 			</section>
 		</section>
 
